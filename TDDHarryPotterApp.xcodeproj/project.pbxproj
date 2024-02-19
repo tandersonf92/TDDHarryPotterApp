@@ -19,6 +19,9 @@
 		87D157622B8382A300F5FB46 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157612B8382A300F5FB46 /* RemoteDataSource.swift */; };
 		87D157682B83855900F5FB46 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1574C2B83828C00F5FB46 /* Data.framework */; };
 		87D157692B83855900F5FB46 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1574C2B83828C00F5FB46 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87D157722B83876300F5FB46 /* DomainInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; };
+		87D157732B83876300F5FB46 /* DomainInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87D157782B8387B100F5FB46 /* DataRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157772B8387B100F5FB46 /* DataRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,13 @@
 			remoteGlobalIDString = 87D1574B2B83828C00F5FB46;
 			remoteInfo = Data;
 		};
+		87D157742B83876300F5FB46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D157022B837A7D00F5FB46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87D157192B837CCC00F5FB46;
+			remoteInfo = DomainInterfaces;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +85,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87D157762B83876300F5FB46 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87D157732B83876300F5FB46 /* DomainInterfaces.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +110,7 @@
 		87D157532B83828D00F5FB46 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157582B83828D00F5FB46 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
 		87D157612B8382A300F5FB46 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		87D157772B8387B100F5FB46 /* DataRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D157722B83876300F5FB46 /* DomainInterfaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +187,7 @@
 			children = (
 				87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */,
 				87D157232B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift */,
+				87D157772B8387B100F5FB46 /* DataRepositoryProtocol.swift */,
 			);
 			path = DomainInterfaces;
 			sourceTree = "<group>";
@@ -300,10 +324,12 @@
 				87D157482B83828C00F5FB46 /* Sources */,
 				87D157492B83828C00F5FB46 /* Frameworks */,
 				87D1574A2B83828C00F5FB46 /* Resources */,
+				87D157762B83876300F5FB46 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				87D157752B83876300F5FB46 /* PBXTargetDependency */,
 			);
 			name = Data;
 			productName = Data;
@@ -423,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D157782B8387B100F5FB46 /* DataRepositoryProtocol.swift in Sources */,
 				87D157242B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift in Sources */,
 				87D157222B837D2D00F5FB46 /* HogwartsCharacterModel.swift in Sources */,
 			);
@@ -482,6 +509,11 @@
 			isa = PBXTargetDependency;
 			target = 87D1574B2B83828C00F5FB46 /* Data */;
 			targetProxy = 87D1576A2B83855900F5FB46 /* PBXContainerItemProxy */;
+		};
+		87D157752B83876300F5FB46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87D157192B837CCC00F5FB46 /* DomainInterfaces */;
+			targetProxy = 87D157742B83876300F5FB46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
