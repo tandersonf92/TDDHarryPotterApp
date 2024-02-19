@@ -1,6 +1,6 @@
 import DomainInterfaces
 
 final class RemoteDataSource: DataRepositoryProtocol {
-    func getHogwartsCharacterList<T: Decodable>(completion: @escaping (([T]) -> Void), failure: @escaping (() -> Void)) {
+    func getHogwartsCharacterList(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {
     }
 }

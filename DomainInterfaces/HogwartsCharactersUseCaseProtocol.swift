@@ -1,3 +1,3 @@
 public protocol HogwartsCharactersUseCaseProtocol {
-    func gettAllHogwartsCharacters(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void))
+    func getAllHogwartsCharacters(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void))
 }
