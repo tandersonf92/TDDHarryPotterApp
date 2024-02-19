@@ -1,3 +1,3 @@
 public protocol DataRepositoryProtocol {
-    func getAllCharactersList()
+    func getHogwartsCharacterList<T: Decodable>(completion: @escaping (([T]) -> Void), failure: @escaping (() -> Void))
 }

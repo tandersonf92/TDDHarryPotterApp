@@ -1,8 +1,6 @@
-public protocol RemoteDataSourceProtocol {
-    func getHogwartsCharacterList<T: Decodable>(completion: @escaping (([T]) -> Void), failure: @escaping (() -> Void))
-}
+import DomainInterfaces
 
-struct RemoteDataSource: RemoteDataSourceProtocol {
+final class RemoteDataSource: DataRepositoryProtocol {
     func getHogwartsCharacterList<T: Decodable>(completion: @escaping (([T]) -> Void), failure: @escaping (() -> Void)) {
     }
 }
