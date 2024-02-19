@@ -1,12 +1,20 @@
-//
-//  DomainTests.swift
-//  DomainTests
-//
-//  Created by Cora on 19/02/24.
-//
-
 import XCTest
-@testable import Domain
+import DomainInterfaces
+import Domain
 
 final class DomainTests: XCTestCase {
+
+    func test_WhenSuccessWithOneObjectThenShouldReceiveResult() {
+        let sut = HogwartsCharactersUseCaseFactory.build()
+
+        var spy: [HogwartsCharacterModel] = []
+
+        sut.gettAllHogwartsCharacters { result in
+            spy = result
+        } failure: {
+            XCTFail()
+        }
+
+        XCTAssertEqual(spy.count, 1)
+    }
 }
