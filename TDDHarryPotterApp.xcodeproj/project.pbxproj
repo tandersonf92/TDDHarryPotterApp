@@ -6,10 +6,66 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		87D157222B837D2D00F5FB46 /* HogwartsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */; };
+		87D157242B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157232B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift */; };
+		87D157322B837DF500F5FB46 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1572A2B837DF400F5FB46 /* Domain.framework */; };
+		87D157372B837DF500F5FB46 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157362B837DF500F5FB46 /* DomainTests.swift */; };
+		87D157382B837DF500F5FB46 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D1572C2B837DF400F5FB46 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87D157332B837DF500F5FB46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D157022B837A7D00F5FB46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87D157292B837DF400F5FB46;
+			remoteInfo = Domain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsCharacterModel.swift; sourceTree = "<group>"; };
+		87D157232B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsCharactersUseCaseProtocol.swift; sourceTree = "<group>"; };
+		87D1572A2B837DF400F5FB46 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D1572C2B837DF400F5FB46 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		87D157312B837DF500F5FB46 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D157362B837DF500F5FB46 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87D157172B837CCC00F5FB46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D157272B837DF400F5FB46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D1572E2B837DF500F5FB46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D157322B837DF500F5FB46 /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		87D157012B837A7D00F5FB46 = {
 			isa = PBXGroup;
 			children = (
+				87D1571B2B837CCC00F5FB46 /* DomainInterfaces */,
+				87D1572B2B837DF400F5FB46 /* Domain */,
+				87D157352B837DF500F5FB46 /* DomainTests */,
 				87D1570C2B837A7D00F5FB46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -17,18 +73,134 @@
 		87D1570C2B837A7D00F5FB46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */,
+				87D1572A2B837DF400F5FB46 /* Domain.framework */,
+				87D157312B837DF500F5FB46 /* DomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		87D1571B2B837CCC00F5FB46 /* DomainInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */,
+				87D157232B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift */,
+			);
+			path = DomainInterfaces;
+			sourceTree = "<group>";
+		};
+		87D1572B2B837DF400F5FB46 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				87D1572C2B837DF400F5FB46 /* Domain.h */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		87D157352B837DF500F5FB46 /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				87D157362B837DF500F5FB46 /* DomainTests.swift */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87D157152B837CCC00F5FB46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D157252B837DF400F5FB46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D157382B837DF500F5FB46 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		87D157192B837CCC00F5FB46 /* DomainInterfaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D1571E2B837CCC00F5FB46 /* Build configuration list for PBXNativeTarget "DomainInterfaces" */;
+			buildPhases = (
+				87D157152B837CCC00F5FB46 /* Headers */,
+				87D157162B837CCC00F5FB46 /* Sources */,
+				87D157172B837CCC00F5FB46 /* Frameworks */,
+				87D157182B837CCC00F5FB46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DomainInterfaces;
+			productName = DomainInterfaces;
+			productReference = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87D157292B837DF400F5FB46 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D157392B837DF500F5FB46 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				87D157252B837DF400F5FB46 /* Headers */,
+				87D157262B837DF400F5FB46 /* Sources */,
+				87D157272B837DF400F5FB46 /* Frameworks */,
+				87D157282B837DF400F5FB46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 87D1572A2B837DF400F5FB46 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87D157302B837DF500F5FB46 /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D1573C2B837DF500F5FB46 /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				87D1572D2B837DF500F5FB46 /* Sources */,
+				87D1572E2B837DF500F5FB46 /* Frameworks */,
+				87D1572F2B837DF500F5FB46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87D157342B837DF500F5FB46 /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = 87D157312B837DF500F5FB46 /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		87D157022B837A7D00F5FB46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					87D157192B837CCC00F5FB46 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					87D157292B837DF400F5FB46 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					87D157302B837DF500F5FB46 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
 			};
 			buildConfigurationList = 87D157052B837A7D00F5FB46 /* Build configuration list for PBXProject "TDDHarryPotterApp" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -43,9 +215,71 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				87D157192B837CCC00F5FB46 /* DomainInterfaces */,
+				87D157292B837DF400F5FB46 /* Domain */,
+				87D157302B837DF500F5FB46 /* DomainTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87D157182B837CCC00F5FB46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D157282B837DF400F5FB46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D1572F2B837DF500F5FB46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87D157162B837CCC00F5FB46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D157242B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift in Sources */,
+				87D157222B837D2D00F5FB46 /* HogwartsCharacterModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D157262B837DF400F5FB46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D1572D2B837DF500F5FB46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D157372B837DF500F5FB46 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87D157342B837DF500F5FB46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87D157292B837DF400F5FB46 /* Domain */;
+			targetProxy = 87D157332B837DF500F5FB46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		87D157102B837A7D00F5FB46 /* Debug */ = {
@@ -173,6 +407,175 @@
 			};
 			name = Release;
 		};
+		87D1571F2B837CCC00F5FB46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.DomainInterfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87D157202B837CCC00F5FB46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.DomainInterfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		87D1573A2B837DF500F5FB46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87D1573B2B837DF500F5FB46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		87D1573D2B837DF500F5FB46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87D1573E2B837DF500F5FB46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -181,6 +584,33 @@
 			buildConfigurations = (
 				87D157102B837A7D00F5FB46 /* Debug */,
 				87D157112B837A7D00F5FB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87D1571E2B837CCC00F5FB46 /* Build configuration list for PBXNativeTarget "DomainInterfaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D1571F2B837CCC00F5FB46 /* Debug */,
+				87D157202B837CCC00F5FB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87D157392B837DF500F5FB46 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D1573A2B837DF500F5FB46 /* Debug */,
+				87D1573B2B837DF500F5FB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87D1573C2B837DF500F5FB46 /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D1573D2B837DF500F5FB46 /* Debug */,
+				87D1573E2B837DF500F5FB46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
