@@ -24,6 +24,7 @@
 		87D1577A2B838E5D00F5FB46 /* DomainInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87F918F72B8774D6004ED834 /* GetStudentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F918F62B8774D6004ED834 /* GetStudentsUseCase.swift */; };
 		87F918FB2B8775FB004ED834 /* GetStudentsUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F918FA2B8775FB004ED834 /* GetStudentsUseCaseSpec.swift */; };
+		87F918FE2B877CA2004ED834 /* RepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F918FD2B877CA2004ED834 /* RepositoryStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		87D157772B8387B100F5FB46 /* DataRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryProtocol.swift; sourceTree = "<group>"; };
 		87F918F62B8774D6004ED834 /* GetStudentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStudentsUseCase.swift; sourceTree = "<group>"; };
 		87F918FA2B8775FB004ED834 /* GetStudentsUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStudentsUseCaseSpec.swift; sourceTree = "<group>"; };
+		87F918FD2B877CA2004ED834 /* RepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		87D157352B837DF500F5FB46 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				87F918FC2B877C8F004ED834 /* TestHelper */,
 				87F918F92B8775DE004ED834 /* GetStudents */,
 				87F918F82B87750C004ED834 /* GetAllHogwartsCharacters */,
 			);
@@ -267,6 +270,14 @@
 				87F918FA2B8775FB004ED834 /* GetStudentsUseCaseSpec.swift */,
 			);
 			path = GetStudents;
+			sourceTree = "<group>";
+		};
+		87F918FC2B877C8F004ED834 /* TestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				87F918FD2B877CA2004ED834 /* RepositoryStub.swift */,
+			);
+			path = TestHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,6 +519,7 @@
 			files = (
 				87D157372B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift in Sources */,
 				87F918FB2B8775FB004ED834 /* GetStudentsUseCaseSpec.swift in Sources */,
+				87F918FE2B877CA2004ED834 /* RepositoryStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
