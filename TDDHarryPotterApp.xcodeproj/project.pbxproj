@@ -10,7 +10,7 @@
 		87D157222B837D2D00F5FB46 /* HogwartsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */; };
 		87D157242B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157232B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift */; };
 		87D157322B837DF500F5FB46 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1572A2B837DF400F5FB46 /* Domain.framework */; };
-		87D157372B837DF500F5FB46 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157362B837DF500F5FB46 /* DomainTests.swift */; };
+		87D157372B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157362B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift */; };
 		87D157402B837EAE00F5FB46 /* DomainInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; };
 		87D157412B837EAE00F5FB46 /* DomainInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87D157462B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157452B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift */; };
@@ -22,6 +22,7 @@
 		87D157782B8387B100F5FB46 /* DataRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157772B8387B100F5FB46 /* DataRepositoryProtocol.swift */; };
 		87D157792B838E5D00F5FB46 /* DomainInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; };
 		87D1577A2B838E5D00F5FB46 /* DomainInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87F918F72B8774D6004ED834 /* GetStudentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F918F62B8774D6004ED834 /* GetStudentsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,13 +105,14 @@
 		87D157232B837D5E00F5FB46 /* HogwartsCharactersUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsCharactersUseCaseProtocol.swift; sourceTree = "<group>"; };
 		87D1572A2B837DF400F5FB46 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157312B837DF500F5FB46 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87D157362B837DF500F5FB46 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		87D157362B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllHogwartsCharactersUseCaseSpec.swift; sourceTree = "<group>"; };
 		87D157452B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllHogwartsCharactersUseCase.swift; sourceTree = "<group>"; };
 		87D1574C2B83828C00F5FB46 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157532B83828D00F5FB46 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157582B83828D00F5FB46 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
 		87D157612B8382A300F5FB46 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		87D157772B8387B100F5FB46 /* DataRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryProtocol.swift; sourceTree = "<group>"; };
+		87F918F62B8774D6004ED834 /* GetStudentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStudentsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 		87D1572B2B837DF400F5FB46 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				87F918F52B877494004ED834 /* GetStudents */,
 				87F918F42B877445004ED834 /* GetAllHogwartsCharacters */,
 			);
 			path = Domain;
@@ -203,7 +206,7 @@
 		87D157352B837DF500F5FB46 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				87D157362B837DF500F5FB46 /* DomainTests.swift */,
+				87F918F82B87750C004ED834 /* GetAllHogwartsCharacters */,
 			);
 			path = DomainTests;
 			sourceTree = "<group>";
@@ -235,6 +238,22 @@
 			isa = PBXGroup;
 			children = (
 				87D157452B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift */,
+			);
+			path = GetAllHogwartsCharacters;
+			sourceTree = "<group>";
+		};
+		87F918F52B877494004ED834 /* GetStudents */ = {
+			isa = PBXGroup;
+			children = (
+				87F918F62B8774D6004ED834 /* GetStudentsUseCase.swift */,
+			);
+			path = GetStudents;
+			sourceTree = "<group>";
+		};
+		87F918F82B87750C004ED834 /* GetAllHogwartsCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				87D157362B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift */,
 			);
 			path = GetAllHogwartsCharacters;
 			sourceTree = "<group>";
@@ -467,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F918F72B8774D6004ED834 /* GetStudentsUseCase.swift in Sources */,
 				87D157462B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D157372B837DF500F5FB46 /* DomainTests.swift in Sources */,
+				87D157372B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
