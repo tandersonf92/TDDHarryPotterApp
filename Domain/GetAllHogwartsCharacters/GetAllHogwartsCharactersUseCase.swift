@@ -15,7 +15,7 @@ final class GetAllHogwartsCharactersUseCase: GetAllHogwartsCharactersUseCaseProt
     }
 
     func execute(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {
-        remoteDataSource.getHogwartsCharacterList { result in
+        remoteDataSource.getAllCharactersList { result in
             completion(result)
         } failure: {
             failure()

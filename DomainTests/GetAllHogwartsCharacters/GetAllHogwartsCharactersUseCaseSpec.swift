@@ -64,7 +64,7 @@ final class Stub: DataRepositoryProtocol {
         self.numbersOfModels = numbersOfModels
     }
 
-    func getHogwartsCharacterList(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {
+    func getAllCharactersList(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {
         if isSuccess {
             var list: [HogwartsCharacterModel] = []
             for _ in 0..<numbersOfModels {
@@ -75,4 +75,6 @@ final class Stub: DataRepositoryProtocol {
             failure()
         }
     }
+    
+    func getStudentsList(completion: @escaping (([DomainInterfaces.HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {}
 }
