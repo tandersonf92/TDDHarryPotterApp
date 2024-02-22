@@ -13,7 +13,7 @@
 		87D157372B837DF500F5FB46 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157362B837DF500F5FB46 /* DomainTests.swift */; };
 		87D157402B837EAE00F5FB46 /* DomainInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; };
 		87D157412B837EAE00F5FB46 /* DomainInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87D157462B8381BF00F5FB46 /* HogwartsCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157452B8381BF00F5FB46 /* HogwartsCharactersUseCase.swift */; };
+		87D157462B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157452B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift */; };
 		87D157542B83828D00F5FB46 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1574C2B83828C00F5FB46 /* Data.framework */; };
 		87D157592B83828D00F5FB46 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157582B83828D00F5FB46 /* DataTests.swift */; };
 		87D157622B8382A300F5FB46 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157612B8382A300F5FB46 /* RemoteDataSource.swift */; };
@@ -105,7 +105,7 @@
 		87D1572A2B837DF400F5FB46 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157312B837DF500F5FB46 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157362B837DF500F5FB46 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
-		87D157452B8381BF00F5FB46 /* HogwartsCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsCharactersUseCase.swift; sourceTree = "<group>"; };
+		87D157452B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllHogwartsCharactersUseCase.swift; sourceTree = "<group>"; };
 		87D1574C2B83828C00F5FB46 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157532B83828D00F5FB46 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157582B83828D00F5FB46 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		87D1572B2B837DF400F5FB46 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				87D157452B8381BF00F5FB46 /* HogwartsCharactersUseCase.swift */,
+				87F918F42B877445004ED834 /* GetAllHogwartsCharacters */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -229,6 +229,14 @@
 				87D157582B83828D00F5FB46 /* DataTests.swift */,
 			);
 			path = DataTests;
+			sourceTree = "<group>";
+		};
+		87F918F42B877445004ED834 /* GetAllHogwartsCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				87D157452B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift */,
+			);
+			path = GetAllHogwartsCharacters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,7 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D157462B8381BF00F5FB46 /* HogwartsCharactersUseCase.swift in Sources */,
+				87D157462B8381BF00F5FB46 /* GetAllHogwartsCharactersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
