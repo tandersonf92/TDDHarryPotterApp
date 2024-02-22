@@ -2,7 +2,7 @@ import Domain
 import DomainInterfaces
 import XCTest
 
-final class DomainTests: XCTestCase {
+final class GetAllHogwartsCharactersUseCaseSpec: XCTestCase {
 
     func test_WhenSuccessWithEmptyListThenShouldReceiveResult() {
         let sut = makeSut(isSuccess: true, numbersOfModels: 0)
@@ -48,7 +48,7 @@ final class DomainTests: XCTestCase {
     }
 }
 
-extension DomainTests {
+extension GetAllHogwartsCharactersUseCaseSpec {
     func makeSut(isSuccess: Bool = true, numbersOfModels: Int = 0) -> GetAllHogwartsCharactersUseCaseProtocol {
         let stub: DataRepositoryProtocol = Stub(isSuccess: isSuccess, numbersOfModels: numbersOfModels)
         return GetAllHogwartsCharactersUseCaseFactory.build(remoteDataSource: stub)
