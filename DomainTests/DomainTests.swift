@@ -9,7 +9,7 @@ final class DomainTests: XCTestCase {
 
         var spy: [HogwartsCharacterModel] = []
 
-        sut.getAllHogwartsCharacters { result in
+        sut.execute { result in
             spy = result
         } failure: {
             XCTFail()
@@ -23,7 +23,7 @@ final class DomainTests: XCTestCase {
 
         var spy: [HogwartsCharacterModel] = []
 
-        sut.getAllHogwartsCharacters { result in
+        sut.execute { result in
             spy = result
         } failure: {
             XCTFail()
@@ -38,7 +38,7 @@ final class DomainTests: XCTestCase {
         var isFailure: Bool = false
 
 
-        sut.getAllHogwartsCharacters { result in
+        sut.execute { result in
             XCTFail()
         } failure: {
             isFailure = true
@@ -49,9 +49,9 @@ final class DomainTests: XCTestCase {
 }
 
 extension DomainTests {
-    func makeSut(isSuccess: Bool = true, numbersOfModels: Int = 0) -> HogwartsCharactersUseCaseProtocol {
+    func makeSut(isSuccess: Bool = true, numbersOfModels: Int = 0) -> GetAllHogwartsCharactersUseCaseProtocol {
         let stub: DataRepositoryProtocol = Stub(isSuccess: isSuccess, numbersOfModels: numbersOfModels)
-        return HogwartsCharactersUseCaseFactory.build(remoteDataSource: stub)
+        return GetAllHogwartsCharactersUseCaseFactory.build(remoteDataSource: stub)
     }
 }
 

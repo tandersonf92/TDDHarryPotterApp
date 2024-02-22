@@ -1,12 +1,12 @@
 import DomainInterfaces
 
-public enum HogwartsCharactersUseCaseFactory {
-    public static func build(remoteDataSource: DataRepositoryProtocol) -> HogwartsCharactersUseCaseProtocol {
-        HogwartsCharactersUseCase(remoteDataSource: remoteDataSource)
+public enum GetAllHogwartsCharactersUseCaseFactory {
+    public static func build(remoteDataSource: DataRepositoryProtocol) -> GetAllHogwartsCharactersUseCaseProtocol {
+        GetAllHogwartsCharactersUseCase(remoteDataSource: remoteDataSource)
     }
 }
 
-final class HogwartsCharactersUseCase: HogwartsCharactersUseCaseProtocol {
+final class GetAllHogwartsCharactersUseCase: GetAllHogwartsCharactersUseCaseProtocol {
     
     let remoteDataSource: DataRepositoryProtocol
 
@@ -14,7 +14,7 @@ final class HogwartsCharactersUseCase: HogwartsCharactersUseCaseProtocol {
         self.remoteDataSource = remoteDataSource
     }
 
-    func getAllHogwartsCharacters(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {
+    func execute(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {
         remoteDataSource.getHogwartsCharacterList { result in
             completion(result)
         } failure: {
