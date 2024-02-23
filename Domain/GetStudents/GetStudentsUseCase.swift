@@ -1,12 +1,12 @@
 import DomainInterfaces
 
 public enum GetStudentsUseCaseFactory {
-    public static func build(repository: DataRepositoryProtocol) -> GetAllHogwartsCharactersUseCaseProtocol  {
+    public static func build(repository: DataRepositoryProtocol) -> GetSudentsUseCaseProtocol  {
         GetStudentsUseCase(repository: repository)
     }
 }
 
-final class GetStudentsUseCase: GetAllHogwartsCharactersUseCaseProtocol {
+final class GetStudentsUseCase: GetSudentsUseCaseProtocol {
     private let repository: DataRepositoryProtocol
 
     init(repository: DataRepositoryProtocol) {
