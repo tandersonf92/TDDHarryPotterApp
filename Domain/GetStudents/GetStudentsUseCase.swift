@@ -1,7 +1,7 @@
 import DomainInterfaces
 
 public enum GetStudentsUseCaseFactory {
-    static func build(repository: DataRepositoryProtocol) -> GetAllHogwartsCharactersUseCaseProtocol  {
+    public static func build(repository: DataRepositoryProtocol) -> GetAllHogwartsCharactersUseCaseProtocol  {
         GetStudentsUseCase(repository: repository)
     }
 }
