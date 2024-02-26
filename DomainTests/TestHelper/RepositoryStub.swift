@@ -22,5 +22,15 @@ final class RepositoryStub: DataRepositoryProtocol {
         }
     }
     
-    func getStudentsList(completion: @escaping (([DomainInterfaces.HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {}
+    func getStudentsList(completion: @escaping (([HogwartsCharacterModel]) -> Void), failure: @escaping (() -> Void)) {
+        if isSuccess {
+            var list: [HogwartsCharacterModel] = []
+            for _ in 0..<numbersOfModels {
+                list.append(.init(name: "Alex"))
+            }
+            completion(list)
+        } else {
+            failure()
+        }
+    }
 }

@@ -1,11 +1,10 @@
-import Domain
+@testable import Domain
 import DomainInterfaces
 import XCTest
 
-
 final class GetStudentsUseCaseSpec: XCTestCase {
     func test_WhenExecute_ThenSuccess_ShouldReceiveCorrectlyValue() {
-        let sut: GetSudentsUseCaseProtocol = makeSut(isSuccess: true)
+        let sut = makeSut(isSuccess: true)
         var spy: [HogwartsCharacterModel] = []
         
         sut.execute { response in
@@ -14,11 +13,11 @@ final class GetStudentsUseCaseSpec: XCTestCase {
             XCTFail("Failure")
         }
 
-        XCTAssertEqual(spy, [.init(name: "Fluffy Alex")])
+        XCTAssertEqual(spy, [.init(name: "Alex")])
     }
 
     func test_WhenExecute_ThenFail_ShouldUpdateErrorValue() {
-        let sut: GetSudentsUseCaseProtocol = makeSut(isSuccess: false)
+        let sut = makeSut(isSuccess: false)
         var errorHasCalled: Bool = false
         sut.execute { _ in
             XCTFail("Failure")
@@ -29,8 +28,8 @@ final class GetStudentsUseCaseSpec: XCTestCase {
         XCTAssertTrue(errorHasCalled)
     }
 
-    private func makeSut(isSuccess: Bool) -> GetSudentsUseCaseProtocol {
-        let repository = RepositoryStub(isSuccess: isSuccess)
+    private func makeSut(isSuccess: Bool) -> GetStudentsUseCaseProtocol {
+        let repository = RepositoryStub(isSuccess: isSuccess, numbersOfModels: 1)
         return GetStudentsUseCaseFactory.build(repository: repository)
     }
 }
