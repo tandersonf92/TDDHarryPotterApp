@@ -13,7 +13,7 @@ final class GetStudentsUseCaseSpec: XCTestCase {
             XCTFail("Failure")
         }
 
-        XCTAssertEqual(spy, [.init(name: "Alex")])
+        XCTAssertEqual(spy, [TestFactoryHelper.makeHogwartsCharacterModel()])
     }
 
     func test_WhenExecute_ThenFail_ShouldUpdateErrorValue() {

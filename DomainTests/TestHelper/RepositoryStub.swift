@@ -14,7 +14,7 @@ final class RepositoryStub: DataRepositoryProtocol {
         if isSuccess {
             var list: [HogwartsCharacterModel] = []
             for _ in 0..<numbersOfModels {
-                list.append(.init(name: "Alex"))
+                list.append(TestFactoryHelper.makeHogwartsCharacterModel())
             }
             completion(list)
         } else {
@@ -26,7 +26,7 @@ final class RepositoryStub: DataRepositoryProtocol {
         if isSuccess {
             var list: [HogwartsCharacterModel] = []
             for _ in 0..<numbersOfModels {
-                list.append(.init(name: "Alex"))
+                list.append(TestFactoryHelper.makeHogwartsCharacterModel())
             }
             completion(list)
         } else {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8715AF2B2B88BFEB00BCE4C3 /* GetAllHogwartsCharactersUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715AF2A2B88BFEB00BCE4C3 /* GetAllHogwartsCharactersUseCaseProtocol.swift */; };
 		8715AF2D2B88CA5700BCE4C3 /* GetSudentsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715AF2C2B88CA5700BCE4C3 /* GetSudentsUseCaseProtocol.swift */; };
+		87B04E0E2B97ADFC00F49B70 /* TestFactoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B04E0D2B97ADFC00F49B70 /* TestFactoryHelper.swift */; };
 		87D157222B837D2D00F5FB46 /* HogwartsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */; };
 		87D157322B837DF500F5FB46 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1572A2B837DF400F5FB46 /* Domain.framework */; };
 		87D157372B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157362B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift */; };
@@ -105,6 +106,7 @@
 /* Begin PBXFileReference section */
 		8715AF2A2B88BFEB00BCE4C3 /* GetAllHogwartsCharactersUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllHogwartsCharactersUseCaseProtocol.swift; sourceTree = "<group>"; };
 		8715AF2C2B88CA5700BCE4C3 /* GetSudentsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSudentsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		87B04E0D2B97ADFC00F49B70 /* TestFactoryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactoryHelper.swift; sourceTree = "<group>"; };
 		87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsCharacterModel.swift; sourceTree = "<group>"; };
 		87D1572A2B837DF400F5FB46 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				87F918FD2B877CA2004ED834 /* RepositoryStub.swift */,
+				87B04E0D2B97ADFC00F49B70 /* TestFactoryHelper.swift */,
 			);
 			path = TestHelper;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B04E0E2B97ADFC00F49B70 /* TestFactoryHelper.swift in Sources */,
 				87D157372B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift in Sources */,
 				87F918FB2B8775FB004ED834 /* GetStudentsUseCaseSpec.swift in Sources */,
 				87F918FE2B877CA2004ED834 /* RepositoryStub.swift in Sources */,
@@ -707,7 +711,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5H277L84SS;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -742,7 +746,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5H277L84SS;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -776,7 +780,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5H277L84SS;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -811,7 +815,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5H277L84SS;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -843,7 +847,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5H277L84SS;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 1.0;
@@ -861,7 +865,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5H277L84SS;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 1.0;
