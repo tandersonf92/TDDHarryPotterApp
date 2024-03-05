@@ -10,6 +10,9 @@
 		8715AF2B2B88BFEB00BCE4C3 /* GetAllHogwartsCharactersUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715AF2A2B88BFEB00BCE4C3 /* GetAllHogwartsCharactersUseCaseProtocol.swift */; };
 		8715AF2D2B88CA5700BCE4C3 /* GetSudentsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715AF2C2B88CA5700BCE4C3 /* GetSudentsUseCaseProtocol.swift */; };
 		87B04E0E2B97ADFC00F49B70 /* TestFactoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B04E0D2B97ADFC00F49B70 /* TestFactoryHelper.swift */; };
+		87B04E1C2B97AFCF00F49B70 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B04E142B97AFCF00F49B70 /* Infra.framework */; };
+		87B04E212B97AFCF00F49B70 /* InfraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B04E202B97AFCF00F49B70 /* InfraTests.swift */; };
+		87B04E222B97AFCF00F49B70 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B04E162B97AFCF00F49B70 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87D157222B837D2D00F5FB46 /* HogwartsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */; };
 		87D157322B837DF500F5FB46 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1572A2B837DF400F5FB46 /* Domain.framework */; };
 		87D157372B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D157362B837DF500F5FB46 /* GetAllHogwartsCharactersUseCaseSpec.swift */; };
@@ -30,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		87B04E1D2B97AFCF00F49B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D157022B837A7D00F5FB46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87B04E132B97AFCF00F49B70;
+			remoteInfo = Infra;
+		};
 		87D157332B837DF500F5FB46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 87D157022B837A7D00F5FB46 /* Project object */;
@@ -107,6 +117,10 @@
 		8715AF2A2B88BFEB00BCE4C3 /* GetAllHogwartsCharactersUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllHogwartsCharactersUseCaseProtocol.swift; sourceTree = "<group>"; };
 		8715AF2C2B88CA5700BCE4C3 /* GetSudentsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSudentsUseCaseProtocol.swift; sourceTree = "<group>"; };
 		87B04E0D2B97ADFC00F49B70 /* TestFactoryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactoryHelper.swift; sourceTree = "<group>"; };
+		87B04E142B97AFCF00F49B70 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B04E162B97AFCF00F49B70 /* Infra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infra.h; sourceTree = "<group>"; };
+		87B04E1B2B97AFCF00F49B70 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B04E202B97AFCF00F49B70 /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
 		87D1571A2B837CCC00F5FB46 /* DomainInterfaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D157212B837D2D00F5FB46 /* HogwartsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsCharacterModel.swift; sourceTree = "<group>"; };
 		87D1572A2B837DF400F5FB46 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +138,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		87B04E112B97AFCF00F49B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B04E182B97AFCF00F49B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B04E1C2B97AFCF00F49B70 /* Infra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D157172B837CCC00F5FB46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +196,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87B04E152B97AFCF00F49B70 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				87B04E162B97AFCF00F49B70 /* Infra.h */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		87B04E1F2B97AFCF00F49B70 /* InfraTests */ = {
+			isa = PBXGroup;
+			children = (
+				87B04E202B97AFCF00F49B70 /* InfraTests.swift */,
+			);
+			path = InfraTests;
+			sourceTree = "<group>";
+		};
 		87D157012B837A7D00F5FB46 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +219,8 @@
 				87D157352B837DF500F5FB46 /* DomainTests */,
 				87D1574D2B83828C00F5FB46 /* Data */,
 				87D157572B83828D00F5FB46 /* DataTests */,
+				87B04E152B97AFCF00F49B70 /* Infra */,
+				87B04E1F2B97AFCF00F49B70 /* InfraTests */,
 				87D1570C2B837A7D00F5FB46 /* Products */,
 				87D1573F2B837EAE00F5FB46 /* Frameworks */,
 			);
@@ -187,6 +234,8 @@
 				87D157312B837DF500F5FB46 /* DomainTests.xctest */,
 				87D1574C2B83828C00F5FB46 /* Data.framework */,
 				87D157532B83828D00F5FB46 /* DataTests.xctest */,
+				87B04E142B97AFCF00F49B70 /* Infra.framework */,
+				87B04E1B2B97AFCF00F49B70 /* InfraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,6 +330,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		87B04E0F2B97AFCF00F49B70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B04E222B97AFCF00F49B70 /* Infra.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D157152B837CCC00F5FB46 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +362,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		87B04E132B97AFCF00F49B70 /* Infra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B04E232B97AFCF00F49B70 /* Build configuration list for PBXNativeTarget "Infra" */;
+			buildPhases = (
+				87B04E0F2B97AFCF00F49B70 /* Headers */,
+				87B04E102B97AFCF00F49B70 /* Sources */,
+				87B04E112B97AFCF00F49B70 /* Frameworks */,
+				87B04E122B97AFCF00F49B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Infra;
+			productName = Infra;
+			productReference = 87B04E142B97AFCF00F49B70 /* Infra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87B04E1A2B97AFCF00F49B70 /* InfraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B04E262B97AFCF00F49B70 /* Build configuration list for PBXNativeTarget "InfraTests" */;
+			buildPhases = (
+				87B04E172B97AFCF00F49B70 /* Sources */,
+				87B04E182B97AFCF00F49B70 /* Frameworks */,
+				87B04E192B97AFCF00F49B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87B04E1E2B97AFCF00F49B70 /* PBXTargetDependency */,
+			);
+			name = InfraTests;
+			productName = InfraTests;
+			productReference = 87B04E1B2B97AFCF00F49B70 /* InfraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		87D157192B837CCC00F5FB46 /* DomainInterfaces */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87D1571E2B837CCC00F5FB46 /* Build configuration list for PBXNativeTarget "DomainInterfaces" */;
@@ -411,6 +504,12 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					87B04E132B97AFCF00F49B70 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					87B04E1A2B97AFCF00F49B70 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					87D157192B837CCC00F5FB46 = {
 						CreatedOnToolsVersion = 15.2;
 						LastSwiftMigration = 1520;
@@ -449,11 +548,27 @@
 				87D157302B837DF500F5FB46 /* DomainTests */,
 				87D1574B2B83828C00F5FB46 /* Data */,
 				87D157522B83828D00F5FB46 /* DataTests */,
+				87B04E132B97AFCF00F49B70 /* Infra */,
+				87B04E1A2B97AFCF00F49B70 /* InfraTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		87B04E122B97AFCF00F49B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B04E192B97AFCF00F49B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D157182B837CCC00F5FB46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,6 +607,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		87B04E102B97AFCF00F49B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B04E172B97AFCF00F49B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B04E212B97AFCF00F49B70 /* InfraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D157162B837CCC00F5FB46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +672,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		87B04E1E2B97AFCF00F49B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87B04E132B97AFCF00F49B70 /* Infra */;
+			targetProxy = 87B04E1D2B97AFCF00F49B70 /* PBXContainerItemProxy */;
+		};
 		87D157342B837DF500F5FB46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 87D157292B837DF400F5FB46 /* Domain */;
@@ -570,6 +705,106 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		87B04E242B97AFCF00F49B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.Infra;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87B04E252B97AFCF00F49B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.Infra;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		87B04E272B97AFCF00F49B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.InfraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87B04E282B97AFCF00F49B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6666T3YAD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.Oliveira.InfraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		87D157102B837A7D00F5FB46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -977,6 +1212,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		87B04E232B97AFCF00F49B70 /* Build configuration list for PBXNativeTarget "Infra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B04E242B97AFCF00F49B70 /* Debug */,
+				87B04E252B97AFCF00F49B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B04E262B97AFCF00F49B70 /* Build configuration list for PBXNativeTarget "InfraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B04E272B97AFCF00F49B70 /* Debug */,
+				87B04E282B97AFCF00F49B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		87D157052B837A7D00F5FB46 /* Build configuration list for PBXProject "TDDHarryPotterApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
