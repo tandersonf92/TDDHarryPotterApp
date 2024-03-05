@@ -171,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				87D1571B2B837CCC00F5FB46 /* DomainInterfaces */,
-				87D1572B2B837DF400F5FB46 /* Domain */,
 				87D157352B837DF500F5FB46 /* DomainTests */,
 				87D1574D2B83828C00F5FB46 /* Data */,
 				87D157572B83828D00F5FB46 /* DataTests */,
@@ -203,21 +202,9 @@
 			path = DomainInterfaces;
 			sourceTree = "<group>";
 		};
-		87D1572B2B837DF400F5FB46 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				87F918F52B877494004ED834 /* GetStudents */,
-				87F918F42B877445004ED834 /* GetAllHogwartsCharacters */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		87D157352B837DF500F5FB46 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				87F918FC2B877C8F004ED834 /* TestHelper */,
-				87F918F92B8775DE004ED834 /* GetStudents */,
-				87F918F82B87750C004ED834 /* GetAllHogwartsCharacters */,
 			);
 			path = DomainTests;
 			sourceTree = "<group>";
@@ -232,6 +219,8 @@
 		87D1574D2B83828C00F5FB46 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				87F918F52B877494004ED834 /* GetStudents */,
+				87F918F42B877445004ED834 /* GetAllHogwartsCharacters */,
 				87D157612B8382A300F5FB46 /* RemoteDataSource.swift */,
 			);
 			path = Data;
@@ -240,6 +229,9 @@
 		87D157572B83828D00F5FB46 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				87F918FC2B877C8F004ED834 /* TestHelper */,
+				87F918F92B8775DE004ED834 /* GetStudents */,
+				87F918F82B87750C004ED834 /* GetAllHogwartsCharacters */,
 				87D157582B83828D00F5FB46 /* DataTests.swift */,
 			);
 			path = DataTests;
