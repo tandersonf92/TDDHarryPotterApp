@@ -1,7 +1,8 @@
 public struct HogwartsCharacterModel: Decodable {
-    public let name: String
-
-    public init(name: String) {
-        self.name = name
-    }
+    public var name: String
+    public var species: String
+    public var gender: String
+    public var house: String
+    public var wizard: Bool
+    public var image: String?
 }
